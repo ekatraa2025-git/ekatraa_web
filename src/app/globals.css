@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ekatraa-primary: #ff4117;
+  --ekatraa-primary-start: #ff0000;
+  --ekatraa-primary-end: #ff7700;
+  --ekatraa-accent: #918f8f;
+  --ekatraa-surface: #fff8f5;
+  --foreground: #1f2937;
+  --background: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #f9fafb;
+    --background: #0f0f0f;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FF0000] via-ekatraa-primary to-ekatraa-primary-end;
+}
+
+/* Subtle mesh background */
+.mesh-bg {
+  background-image:
+    radial-gradient(at 40% 20%, rgba(255, 65, 23, 0.08) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(255, 119, 0, 0.06) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(255, 65, 23, 0.05) 0px, transparent 50%);
+}
+
+/* Section container */
+.section-padding {
+  @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28;
+}
+
+.max-section {
+  @apply max-w-7xl mx-auto;
+}
