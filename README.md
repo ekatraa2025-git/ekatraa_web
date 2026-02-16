@@ -1,4 +1,4 @@
-# Ekatraa Web – Landing Page
+# Ekatraa Web – Landing Page of Ekatraa
 
 Modern Next.js landing page for **Ekatraa Mobile App** and **Ekatraa Vendor App**, built with the Ekatraa brand and presentation content.
 
