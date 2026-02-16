@@ -16,7 +16,7 @@ export function Footer() {
             className="h-8 w-auto brightness-0 invert opacity-90"
           />
         </Link>
-        <p className="text-sm text-center sm:text-right">
+        <p className="text-sm text-center sm:text-right" suppressHydrationWarning>
           © {new Date().getFullYear()} Ekatraa. Building the future of event
           planning in India.
         </p>

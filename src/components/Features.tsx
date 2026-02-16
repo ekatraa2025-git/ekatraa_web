@@ -55,9 +55,10 @@ export function Features() {
               key={f.title}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
-              className="rounded-2xl bg-white border border-ekatraa-border p-6 shadow-sm hover:shadow-md hover:border-ekatraa-primary/30 transition-all"
+              viewport={{ once: true, margin: "-20px" }}
+              transition={{ delay: i * 0.08, duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+              whileHover={{ y: -2, transition: { duration: 0.2 } }}
+              className="rounded-2xl bg-white border border-ekatraa-border p-6 shadow-sm hover:shadow-md hover:border-ekatraa-primary/30 transition-all duration-300"
             >
               <span className="text-3xl">{f.icon}</span>
               <h3 className="mt-3 font-semibold text-gray-900">{f.title}</h3>

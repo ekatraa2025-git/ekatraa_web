@@ -62,9 +62,10 @@ export function AppsSection() {
               key={card.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
-              className="relative rounded-3xl border border-ekatraa-border bg-white p-8 shadow-xl shadow-gray-200/50 hover:shadow-ekatraa-primary/10 transition-all overflow-hidden group"
+              viewport={{ once: true, margin: "-20px" }}
+              transition={{ delay: i * 0.12, duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+              whileHover={{ y: -4 }}
+              className="relative rounded-3xl border border-ekatraa-border bg-white p-8 shadow-xl shadow-gray-200/50 hover:shadow-ekatraa-primary/10 transition-shadow duration-300 overflow-hidden group"
             >
               <div
                 className={`absolute top-0 right-0 w-64 h-64 bg-gradient-to-br ${card.gradient} opacity-5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:opacity-10 transition-opacity`}
