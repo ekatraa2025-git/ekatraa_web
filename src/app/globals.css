@@ -12,12 +12,7 @@
   --background: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: #f9fafb;
-    --background: #0f0f0f;
-  }
-}
+/* No dark-mode media query: keeps server/client in sync and avoids hydration mismatch on Vercel */
 
 html {
   scroll-behavior: smooth;
